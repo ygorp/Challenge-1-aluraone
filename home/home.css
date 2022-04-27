@@ -44,8 +44,14 @@ span {
   height: 400px;
   background: #E7E7E7;
   border: 0;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.52);
+  color: #121212;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: lowercase;
 }
 
 .input input::placeholder {
@@ -132,13 +138,14 @@ span {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .descripto {
   width: 328px;
   height: 67px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 0;
   border-radius: 24px;
   background: #373B44;
@@ -147,5 +154,18 @@ span {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.cripto:hover {
+  background: #FFFFFF;
+  color: #121212;
+  transform: scale(1.1);
+}
+
+.descripto:hover {
+  background: #FFFFFF;
+  color: #121212;
+  transform: scale(1.1);
 }
 
