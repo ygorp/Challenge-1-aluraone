@@ -11,8 +11,7 @@ function esconder() {
   document.getElementById('campo-cripto').style.marginLeft = "55%";
 }
 
-var cripto = document.getElementById('crypto').addEventListener('click', function(event) {
-
+function crypto() {
   var dados = document.getElementById('text').value.toLowercase();
 
   var codificar = dados.replace(/e/g, 'enter');
@@ -23,9 +22,11 @@ var cripto = document.getElementById('crypto').addEventListener('click', functio
 
   document.getElementById('codificado').value = codificar;
   document.getElementById('text').value = '';
-})
+}
 
-var uncrypto = document.getElementById('uncrypto').addEventListener('click', function(event) {
+  
+
+function uncrypto() {
   var dados = document.getElementById('text').value;
   var descodificar = dados.replace(/imes/g, 'i');
   descodificar = descodificar.dados.replace(/enter/g, 'e');
@@ -35,7 +36,7 @@ var uncrypto = document.getElementById('uncrypto').addEventListener('click', fun
 
   document.getElementById('codificado').value = descodificar;
   document.getElementById('text').value = '';
-})
+}
 
 document.getElementById('copy').addEventListener('click', function() {
 
