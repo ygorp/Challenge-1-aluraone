@@ -13,17 +13,27 @@
       <h1><span>E</span>ncrypt<span>T</span>ext</h1>
     </section>
 
-    <section class="input">
-      <input type="text" name="texto" id="texto" value="" placeholder="Digite ou cole seu texto" />
-    </section>
+    <div class="textArea">
+      <textarea
+        name="text"
+        id="text"
+        cols="80"
+        rows="30"
+        placeholder="Digite ou cole seu texto aqui"></textarea>
+    </div>
 
-    <section class="campo-criptografado">
-      <div class="espaco">
-        <img src="/img/High quality products 1 1.svg" alt="homem com lupa" />
-        <h2 class="mensagem">Nenhuma mensagem encontrada</h2>
-        <p class="instrucao">
-          Digite um texto que você deseja criptografar ou descriptografar.
-        </p>
+    <section id="campo-cripto" class="campo-criptografado">
+      <div id="espaco" class="espaco">
+        <div id="esconder">
+          <img src="/img/High quality products 1 1.svg" alt="homem com lupa" />
+          <h2 class="mensagem">Nenhuma mensagem encontrada</h2>
+          <p class="instrucao">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+
+        <textarea name="codificado" id="codificado" cols="80" rows="30"></textarea>
+        <button id="copy">Copiar</button>
       </div>
     </section>
 
@@ -33,8 +43,8 @@
     </section>
 
     <section class="botoes">
-      <button class="cripto">Criptografar</button>
-      <button class="descripto">Descriptografar</button>
+      <button onclick='esconder()' id="crypto" class="cripto">Criptografar</button>
+      <button id="uncrypto" class="descripto">Descriptografar</button>
     </section>
 
     <script type="text/javascript" src="/home/home.js"></script>
